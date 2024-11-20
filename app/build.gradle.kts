@@ -36,6 +36,10 @@ android {
 }
 
 dependencies {
+    // DI(Koin)
+    implementation("io.insert-koin:koin-android:3.5.0")
+    implementation("io.insert-koin:koin-android-compat:3.5.0")
+
     // Navigation
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
