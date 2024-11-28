@@ -18,8 +18,6 @@ class HomeScreenFragment: Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.home_screen, container, false)
 
-        viewModel.hello()
-
         return root
     }
 }

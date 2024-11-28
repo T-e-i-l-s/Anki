@@ -36,9 +36,12 @@ android {
 }
 
 dependencies {
+    // Room
+    implementation(libs.room.runtime)
+
     // DI(Koin)
-    implementation("io.insert-koin:koin-android:3.5.0")
-    implementation("io.insert-koin:koin-android-compat:3.5.0")
+    implementation(libs.koin.android)
+    implementation(libs.koin.android.compat)
 
     // Navigation
     implementation(libs.androidx.navigation.fragment.ktx)
