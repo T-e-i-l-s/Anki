@@ -13,3 +13,10 @@ fun CardsEntity.toCardModel() = CardModel(
 fun List<CardsEntity>.toCardModelList(): List<CardModel> {
     return this.map { it.toCardModel() }
 }
+
+fun CardModel.toCardsEntity() = CardsEntity(
+    this.id,
+    this.side1,
+    this.side2,
+    this.deckId
+)
